@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DetailsDossier</class>
+ <widget class="QDialog" name="DetailsDossier">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Details Dossier</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="icon">
+       <iconset resource="logo.qrc">
+        <normaloff>:/images/Academic-Hat.png</normaloff>:/images/Academic-Hat.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Données éleve</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>551</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="nomLeveLabel">
+          <property name="text">
+           <string>Nom éleve</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="prNomLeveLabel">
+          <property name="text">
+           <string>Prénom éleve</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="niveauLabel">
+          <property name="text">
+           <string>Niveau</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="icon">
+       <iconset resource="logo.qrc">
+        <normaloff>:/images/User.png</normaloff>:/images/User.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Données premier responsable</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>551</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <property name="labelAlignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="formAlignment">
+         <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="nomPremierResponsableLabel">
+          <property name="text">
+           <string>Nom Premier Responsable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="prNomPremierResponsableLabel">
+          <property name="text">
+           <string>Prénom Premier Responsable    </string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Adresse Premier Responsable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>190</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <attribute name="icon">
+            <iconset resource="logo.qrc">
+             <normaloff>:/images/home.png</normaloff>:/images/home.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Adresse Personelle</string>
+           </attribute>
+           <widget class="QWidget" name="layoutWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>311</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_10">
+             <item row="0" column="0">
+              <widget class="QLabel" name="ligneAdresse1Label">
+               <property name="text">
+                <string>Ligne Adresse 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="ligneAdress2Label">
+               <property name="text">
+                <string>Ligne Adress 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="villeLabel">
+               <property name="text">
+                <string>Ville</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="codePostaleLabel">
+               <property name="text">
+                <string>CodePostale</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="paysLabel">
+               <property name="text">
+                <string>Pays</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="icon">
+            <iconset resource="logo.qrc">
+             <normaloff>:/images/suitcase.png</normaloff>:/images/suitcase.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Adresse Professionnelle</string>
+           </attribute>
+           <widget class="QWidget" name="layoutWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>311</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_11">
+             <item row="0" column="0">
+              <widget class="QLabel" name="ligneAdresse1Label_5">
+               <property name="text">
+                <string>Ligne Adresse 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="ligneAdress2Label_5">
+               <property name="text">
+                <string>Ligne Adress 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="villeLabel_5">
+               <property name="text">
+                <string>Ville</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="codePostaleLabel_5">
+               <property name="text">
+                <string>CodePostale</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="paysLabel_5">
+               <property name="text">
+                <string>Pays</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="nTelephonesLabel">
+          <property name="text">
+           <string>N° Telephones</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>--</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="professionLabel">
+          <property name="text">
+           <string>Profession</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="icon">
+       <iconset resource="logo.qrc">
+        <normaloff>:/images/User.png</normaloff>:/images/User.png</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Données deuxiéme responsable</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>551</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_8">
+        <item row="0" column="0">
+         <widget class="QLabel" name="nomPremierResponsableLabel_4">
+          <property name="text">
+           <string>Nom deuxiéme Responsable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="prNomPremierResponsableLabel_4">
+          <property name="text">
+           <string>Prénom deuxiéme Responsable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Adresse deuxiéme Responsable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="nTelephonesLabel_4">
+          <property name="text">
+           <string>N° Telephones</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>--</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1">
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="sizeIncrement">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_8">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>190</height>
+            </size>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <attribute name="icon">
+            <iconset resource="logo.qrc">
+             <normaloff>:/images/home.png</normaloff>:/images/home.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Adresse Personelle</string>
+           </attribute>
+           <widget class="QWidget" name="layoutWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>311</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_14">
+             <item row="0" column="0">
+              <widget class="QLabel" name="ligneAdresse1Label_3">
+               <property name="text">
+                <string>Ligne Adresse 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="ligneAdress2Label_3">
+               <property name="text">
+                <string>Ligne Adress 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="villeLabel_3">
+               <property name="text">
+                <string>Ville</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="codePostaleLabel_3">
+               <property name="text">
+                <string>CodePostale</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="paysLabel_3">
+               <property name="text">
+                <string>Pays</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_27">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_28">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_29">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_31">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_9">
+           <attribute name="icon">
+            <iconset resource="logo.qrc">
+             <normaloff>:/images/suitcase.png</normaloff>:/images/suitcase.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Adresse Professionnelle</string>
+           </attribute>
+           <widget class="QWidget" name="layoutWidget_7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>311</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <layout class="QFormLayout" name="formLayout_15">
+             <item row="0" column="0">
+              <widget class="QLabel" name="ligneAdresse1Label_7">
+               <property name="text">
+                <string>Ligne Adresse 1</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="ligneAdress2Label_7">
+               <property name="text">
+                <string>Ligne Adress 2</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="villeLabel_7">
+               <property name="text">
+                <string>Ville</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="codePostaleLabel_7">
+               <property name="text">
+                <string>CodePostale</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="paysLabel_7">
+               <property name="text">
+                <string>Pays</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_23">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>--</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="professionLabel_2">
+          <property name="text">
+           <string>Profession</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_33">
+          <property name="text">
+           <string>--</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DetailsDossier</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>575</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DetailsDossier</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>325</x>
+     <y>575</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
